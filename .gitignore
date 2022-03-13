@@ -1,0 +1,13 @@
+.idea/
+.ipynb_checkpoints
+
+models/
+outputs/
+taming/
+
+starting_image.png
+
+pixray/
+CLIP/
+taming-transformers/
+v-diffusion-pytorch/

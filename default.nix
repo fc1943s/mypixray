@@ -200,6 +200,13 @@ let
       sha256 = "08kbdaa6qdsp4qz8qvw8p4hkm4v2791pl8nhl45y0wwlpqk795cw";
     };
 
+#    src = builtins.fetchTarball {
+#      url = "https://github.com/pytorch/vision/archive/refs/tags/v0.10.1.tar.gz";
+#      sha256 = "0dw4q4yf86wwkm38bpsjf0yfzai46icvaly861ymh5v9f90q60jw";
+#    };
+
+
+
 
 
 #    src = nixos-unstable.python39Packages.fetchPypi {
@@ -344,6 +351,6 @@ in
     ];
 
     shellHook = ''
-      jupyter notebook
+      jupyter notebook --no-browser
     '';
   }
